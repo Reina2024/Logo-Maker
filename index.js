@@ -13,7 +13,11 @@ const backgroundShapes = [
     "Retangle",
 ]
 
-
+// Start Generator, help user know what to do. 
+function init() {
+    console.log("\n This will make a logo for you formatted as an SVG file. Please enter up to 3 letters, then pick a shape and color.");
+    createSVG();
+  }
 
 
 // initialize app

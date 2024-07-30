@@ -1,4 +1,0 @@
-<svg width="300" height="200">
-                <polygon points="150,10 290,190 10,190" fill="Triangle" />
-                <text x="50%" y="50%" fill="yellow" text-anchor="middle" alignment-baseline="central">raw</text>
-              </svg>

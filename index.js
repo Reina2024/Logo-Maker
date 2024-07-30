@@ -25,7 +25,7 @@ function rainbowText(text) {
   
 
 // shapes for logo
-const backgroundShapes = [
+const backgroundShape = [
       "Circle",
       "Square",
       "Triangle",
@@ -57,7 +57,7 @@ function createSVG() {
         type: 'list',
         message:rainbowText("\n Choose a shape:"),
         name: "shape",
-        choices: backgroundShapes,
+        choices: backgroundShape,
       },
       {
         type: 'input',
@@ -68,7 +68,7 @@ function createSVG() {
     ])
     .then((logo) => {
       const {text, textColor, shape, shapeColor} = logo;
-      const svg = new Shapes[shape](text, textColor, shape, shapeColor).render();
+      const svg = new Shapes[shape](text, textColor, shapeColor).render();
       console.log(svg);
       return svg;
     })

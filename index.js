@@ -19,8 +19,6 @@ function init() {
     createSVG();
   }
 
-
-
 // collect the user input for SVG
 function createSVG() {
     inquirer.prompt([
@@ -62,6 +60,13 @@ function createSVG() {
        console.log(error)
     );
   }
+
+  function writeToFile(data) {
+    fs.writeFile("./examples/logo.svg", data, (err) =>
+      err ? console.log(err) : console.log("\nGenerated logo.svg in the folder ./examples/"));
+  }
+  
+
 
 
 

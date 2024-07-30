@@ -1,4 +1,4 @@
 <svg width="300" height="200">
-                <circle cx="150" cy="100" r="90" fill="Circle" />
-                <text x="50%" y="50%" fill="pink" text-anchor="middle" alignment-baseline="central">dog</text>
+                <polygon points="150,10 290,190 10,190" fill="Triangle" />
+                <text x="50%" y="50%" fill="yellow" text-anchor="middle" alignment-baseline="central">raw</text>
               </svg>

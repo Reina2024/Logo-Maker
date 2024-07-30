@@ -5,6 +5,24 @@ const Shapes = require("./lib/shapes.js");
 const validator = require("validator");
 const fs = require("fs");
 const { log } = require("console");
+const chalk = require("chalk");
+
+
+// Define a function to create rainbow text
+function rainbowText(text) {
+    const colors = [
+      chalk.red,
+      chalk.green,
+      chalk.yellow,
+      chalk.blue,
+      chalk.magenta,
+      chalk.cyan,
+      chalk.white
+    ];
+  
+    return text.split('').map((char, index) => colors[index % colors.length](char)).join('');
+  }
+  
 
 // shapes for logo
 const backgroundShapes = [
@@ -16,7 +34,7 @@ const backgroundShapes = [
 
 // Start Generator, help user know what to do. 
 function init() {
-    console.log("\n This will make a logo for you formatted as an SVG file. Please enter up to 3 letters, then pick a shape and color.");
+    console.log(rainbowText("\n This will make a logo for you formatted as an SVG file. Please enter up to 3 letters, then pick a shape and color."));
     createSVG();
   }
 
@@ -25,25 +43,25 @@ function createSVG() {
     inquirer.prompt([
       {
         type: 'input',
-        message: "\n Enter 1-3 characters",
+        message:rainbowText( "\n Enter 1-3 characters"),
         name: "text",
         validate: checkText,
       },
       {
         type: 'input',
-        message: "\n Enter the color name (or hexadecimal number) you want your text to appear in",
+        message:rainbowText("\n Enter the color name (or hexadecimal number) you want your text to appear in"),
         name: "textColor",
         validate: checkColor,
       },
       {
         type: 'list',
-        message: "\n Choose a shape:",
+        message:rainbowText("\n Choose a shape:"),
         name: "shape",
         choices: backgroundShapes,
       },
       {
         type: 'input',
-        message: "\n Enter the color name (or hexadecimal number) you want for your back ground shape",
+        message: rainbowText("\n Enter the color name (or hexadecimal number) you want for your back ground shape"),
         name: "shapeColor",
         validate: checkColor,
       },
@@ -64,7 +82,9 @@ function createSVG() {
 // Write data to the examples folder
   function writeToFile(data) {
     fs.writeFile("./examples/logo.svg", data, (err) =>
-      err ? console.log(err) : console.log("\n You can find you generated logo.svg in the folder ./examples/"));
+      err ? console.log(err) : console.log(
+        `${rainbowText("\nGenerated logo.svg!")}\n${rainbowText("You can find your generated logo.svg in the folder ./examples/")}`
+      ));
   }
   
 // funtion to check if the color input is a color name, hexadecimal or if empty return error message

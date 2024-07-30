@@ -1,5 +1,4 @@
-h1 style= "text-center"> Logo Generator </h1>
- 
+## Logo- Maker
 
 
   [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
@@ -31,7 +30,7 @@ h1 style= "text-center"> Logo Generator </h1>
 </ol>
 
 ## Description 
- This is log maker that use command line prompts for user input. It will generate a thre character log with a colored shape for the background. 
+ This is a logo maker that use command line prompts for user input. It will generate a thre character log with a colored shape for the background. 
  
 
 ### Built With: 

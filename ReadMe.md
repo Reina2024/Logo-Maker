@@ -36,10 +36,15 @@
 ### Built With: 
 
   [![VS Code](https://img.shields.io/badge/IDE-VSCode-0000ff?style=plastic&logo=VisualStudioCode&logoWidth=10)](https://code.visualstudio.com/docs)
+  
   [![Javascript](https://img.shields.io/badge/Language-JavaScript-ff0000?style=plastic&logo=JavaScript&logoWidth=10)](https://javascript.info/)
+  
   [Node.js](https://nodejs.org/en/about)
+  
     - [colors](https://www.npmjs.com/package/colors)
+  
     - [inquirer@8.2.4](https://www.npmjs.com/package/inquirer/v/8.2.4)
+  
   [JEST](https://jestjs.io/docs/getting-started)
 
 ## Installation 
@@ -55,11 +60,13 @@
 ## Images
    Below is a screenshot of the terminal:
 
-   ![Terminal View](/assets/images/)
-   
+   ![Terminal View](./images/Screenshot%202024-07-30%20at%201.45.34 AM.png)
+  ![Terminal View](./images/Screenshot%202024-07-30%20at%201.46.16 AM.png)
+  
    Below is a video of the terminal usage. 
 
-  [![Video of terminal usage] 
+  [Watch this video walk through](
+ https://app.screencastify.com/v3/watch/ASfoSdJ4t0oHtSrhmaxH)
  
 
 ## Testing 

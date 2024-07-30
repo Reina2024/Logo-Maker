@@ -1,0 +1,4 @@
+<svg width="300" height="200">
+                <polygon points="150,10 290,190 10,190" fill="blue" />
+                <text x="50%" y="50%" fill="pink" text-anchor="middle" alignment-baseline="central">col</text>
+              </svg>

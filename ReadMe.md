@@ -62,7 +62,12 @@
 
    ![Terminal View](./images/Screenshot%202024-07-30%20at%201.45.34 AM.png)
   ![Terminal View](./images/Screenshot%202024-07-30%20at%201.46.16 AM.png)
-  
+  ![Terminal View](./images/Screenshot%202024-07-30%20at%202.08.50 AM.png)
+![Terminal View](./images/Screenshot%202024-07-30%20at%202.09.19 AM.png)
+![Terminal View](./images/Screenshot%202024-07-30%20at%202.09.53 AM.png)
+
+
+
    Below is a video of the terminal usage. 
 
   [Watch this video walk through](
